@@ -1,8 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  mode: "jit",
+  content: ["./*.html", "./*.{js,jsx,ts,tsx,vue}"],
+  darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        35: "35px",
+      },
+      colors: {
+        gray33: "#333",
+      },
+    },
   },
   plugins: [],
 };
